@@ -1,4 +1,7 @@
 
+
+// Answeer question 2
+
 const url ="https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating";
 
 const resultContainer = document.querySelector(".results");
@@ -14,12 +17,14 @@ async function gamesRating() {
   resultContainer.innerHTML="";
 
   for (let i = 0; i < rating.length; i++) {
-    console.log(rating[i].name);
-  }
+    
+    console.log(rating[i].name, rating[i].rating);
 
-  resultContainer.innerHTML += ` <div class="result"> ${rating[i].name} </div>`
-  
+    if (i === 8) {
+      break;
+    }
+ 
+    resultContainer.innerHTML += ` <div class="result">  ${rating[i].name}, ${rating[i].rating} </div>`
+  }
 }
 gamesRating()
-
-// console.log("Name:" ,facts[i].name + ", " + "Rating:" ,facts[i].rating);

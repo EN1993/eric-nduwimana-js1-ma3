@@ -21,7 +21,7 @@
   border-radius: 50%;
   border: 10px solid rgb(219, 207, 207);
   border-top: 12px solid rgb(107, 51, 51);
-  animation: spin 2s linear infinite;
+  animation: spin 3s linear infinite;
   
 }
 
