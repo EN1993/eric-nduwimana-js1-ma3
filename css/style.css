@@ -1,6 +1,6 @@
 .container{
  max-width: 1000px;
- margin: 0px; 
+ margin: 0 auto; 
 }
 
 .results{
@@ -9,8 +9,8 @@
 }
 
 .result{
-  max-width: 150px;
-  padding: 10px;
+  max-width: 200px;
+  padding: 1rem;
   margin: 1rem;
   background: darkgoldenrod;
 }
